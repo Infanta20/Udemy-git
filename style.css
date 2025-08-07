@@ -76,9 +76,17 @@ body {
 .catagories p{
     background-color: #A435F0;
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
+    border: solid #A435F0 1px;
+}
 
+.catagories p:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+    border: solid #A435F0 1px;
 }
 .sales__image{
     position: relative;
@@ -95,6 +103,21 @@ body {
     position: absolute;
     top: 10%;
     left: 10%;
+    animation-name: zoom;
+    animation-duration: 1s;
+    /* opacity: 0 ;
+    animation-fill-mode: forwards; */
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0 );
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .course__card img{
